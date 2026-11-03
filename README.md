@@ -23,6 +23,22 @@ users submit image bytes to the API and receive typed boxes, scores, and provena
 [Results index](docs/RESULTS_INDEX.md) · [Model card](docs/MODEL_CARD.md) ·
 [Error analysis](docs/ERROR_ANALYSIS.md) · [Reproducibility](docs/REPRODUCIBILITY.md)
 
+## Optional application integration
+
+The companion [Visual Inspection Platform](https://github.com/ThePhysic/visual-inspection-platform-pcb)
+adds optional worker-side HTTP inference, durable asynchronous inspections, and
+revisioned human correction. Its optional Compose file builds this repository's
+CPU Dockerfile and mounts `releases/pcb-ind-ssdlite-v1` read-only. See its
+[integration guide](https://github.com/ThePhysic/visual-inspection-platform-pcb/blob/integration/real-pcb/docs/real-pcb-inference.md)
+for pinned revisions, digest, setup, and executed acceptance evidence.
+
+This repository continues to own training, evaluation, immutable release bundles,
+and standalone serving. It does not access the platform's MongoDB, Redis, or human
+reviews. Corrections do not trigger training. No dataset evaluation or Python-only
+timing in this README is an integrated application performance measurement.
+The projects are unaffiliated with Matroid and are not validated for production
+visual inspection.
+
 ## Run the released model locally
 
 After the [Python 3.12 CPU setup](#serve-the-trained-model), run these Windows
