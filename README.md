@@ -1,6 +1,6 @@
 # Visual Inspection Deep Learning & Model Serving
 
-[![validate](https://github.com/ThePhysic/visual-inspection-dl/actions/workflows/ci.yml/badge.svg)](https://github.com/ThePhysic/visual-inspection-dl/actions/workflows/ci.yml)
+[![Upstream validate](https://github.com/ThePhysic/visual-inspection-dl/actions/workflows/ci.yml/badge.svg)](https://github.com/ThePhysic/visual-inspection-dl/actions/workflows/ci.yml) · [Private validation](https://github.com/ThePhysic/visual-inspection-dl-pcb/actions/workflows/ci.yml)
 
 A reproducible PyTorch detector for eight circuit-board defect classes, with audited
 data, controlled experiments, held-out evaluation, a versioned trained model, and a

@@ -2,8 +2,10 @@
 
 This service is independently runnable. It owns model loading and image-to-detections
 inference. It has no inspection IDs, database writes, upload storage, queues, review
-history, or training triggered by an inference request. The related SWE application's
-actual schema must be inspected during a later integration milestone.
+history, or training triggered by an inference request. The companion
+[Visual Inspection Platform integration](https://github.com/ThePhysic/visual-inspection-platform-pcb/blob/integration/real-pcb/docs/real-pcb-inference.md)
+maps this independent Python contract to its TypeBox inspection and review contracts
+inside the existing worker. This service has no database or review access.
 
 Start a real model with:
 
